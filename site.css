@@ -1,0 +1,547 @@
+/* HTML CSS Javascript */
+body{
+	overflow: hidden;
+}
+.animation_container {
+	width:100%;
+	height:625px;
+	position:relative;
+	background: transparent;
+	margin:0 auto;	  
+	overflow: hidden;  
+}
+/* Css for Logo */
+.astech {width:70px;
+    padding:8px;
+    margin:10px;
+    border:2px solid blue;
+    border-radius:50%;
+    background:transparent;
+    position:absolute;
+    animation:astech 10s linear infinite;
+}
+.astech #logo {
+    width:70px;          
+    animation:logo 1s linear alternate infinite;        
+}
+
+  @keyframes astech { 
+    0%{transform:rotateY(0deg);}
+    100%{transform:rotateY(360deg);}    
+  }
+  @keyframes logo { 
+    0%{transform:rotate(-10deg);}
+    100%{transform:rotate(10deg);}        
+  } 
+
+/* Css for Logo End */	
+/* Top three Boxes */	
+   #topbox {   	   
+		width:40%;
+		margin-left:350px;
+		position:absolute;
+		background:transparent;   	
+   }
+   #box1,#box2,#box3 {
+   		width:11%;
+		height:20px;
+		font-size:25px;
+		padding:20px;
+		margin-left:45px;
+		text-align:center;			
+		float:left;
+
+   }
+   #box1 {
+		background:pink;		
+		color:green;		
+	    border-radius:10px;
+	    animation:box1 10s linear infinite;
+   }
+
+   #box2 {
+		background:lightblue;		
+		color:blue;	
+		animation:box2 9s linear infinite;
+   }
+   #box3 {
+   	    width:104px;
+		background:#f0f0f0;		
+		color:red;	
+		border-radius:10px;
+		animation:box3 9s linear infinite;
+   }  
+	@keyframes box1{
+		0% {padding:10px;}
+		50% {padding:20px;}
+		100% {padding:10px;}
+	}
+
+	@keyframes box2{
+		0% {transform:rotateY(0deg);}
+		100% {transform:rotateY(360deg);}
+		0% {transform:rotateY(0deg);}
+	}
+	@keyframes box3{
+		0% {transform:rotateX(0deg);}
+		100% {transform:rotateX(360deg);}
+		0% {transform:rotateX(0deg);}
+	}
+    .oval {
+		width:30%;
+		height:100px;
+		margin:400px 700px;
+		background:rgb(156,58,59);
+        border-radius:50%;
+        position:relative;
+        border:3px solid blue;
+        box-shadow: 0 0 3px black;
+        animation:oval 40s linear infinite;    	
+    }
+    .pillar {
+		width:30px;
+		height:250px;
+		background:pink;
+		position:absolute;
+		left:170px;top:-200px;
+		border-radius:100px;
+		box-shadow: 0 0 3px black;
+		animation:pillar 1s linear infinite;    	
+    }
+	@keyframes pillar{
+		0% {transform:rotateY(0deg);background:pink;}
+		100% {transform:rotateY(360deg);background:blue;}
+		0% {transform:rotateY(0deg);background:yellow;}
+	}
+
+	@keyframes oval{
+		0% {transform:skew(0deg,0deg);}
+		50% {transform:skew(0deg,0deg);}
+		100% {transform:skew(0deg,0deg);}
+	}
+
+/* Css for Logo End */
+    .slide {
+    	width:50%;
+    	color:rgb(100,100,100);
+    	margin:10px auto;padding:4px;
+    }
+
+	.slide h1{
+		position:relative;top:10px;
+		background:transparent;		
+		animation:slide 4s alternate infinite;
+	}
+
+	@keyframes slide{
+		0% {left:0px;transform:rotate(-3deg);}
+		25% {left:300px;transform:rotate(0deg);}
+		50% {left:300px;transform:rotate(-4deg);}
+		75% {left:300px;transform:rotate(0deg);}
+		100% {left:0px;transform:rotate(3deg);}
+	}
+
+	.youtube01 {width:300px;position:absolute;left:0px;top:250px;}  
+	.youtube02 {width:300px;position:absolute;left:0px;top:310px;}  
+	.youtube03 {width:300px;position:absolute;left:0px;top:370px;}  
+
+	.social,.like,.subscribe,.share{
+  	   width:300px;
+  	   text-align:center;
+  	   background: rgb(05,05,05);
+  	   color:red;
+  	   font-size:45px;
+	   position:absolute;	   
+	   border-radius: 0 0 35px 0;  
+	}
+   .social, .like{animation:like 2s linear infinite;}
+	@keyframes like{0%{left:-320px;} 50%{left:0px;} 100%{left:-320px;}}
+
+	.social, .subscribe{animation:subscribe 4s linear infinite;}
+	@keyframes subscribe{0%{left:-350px;} 50%{left:0px;} 100%{left:-350px;}}
+
+	.social, .share{animation:share 5s linear infinite;}
+	@keyframes share{0%{left:-400px;} 50%{left:0px;} 100%{left:-400px;}}
+
+
+  	.webDevelopmentText{width:400px;}
+  	.webDevelopmentText,.web{
+  	   width:840px;
+  	   text-align:center;
+  	   background: red;
+  	   color:yellow;
+  	   font-size:50px;
+	   position:absolute;left:0;bottom:0;	   
+	   border-radius: 0 35px 0 0; 
+	   animation:web 4s linear infinite; 
+	}   
+	@keyframes web{0%{left:-410px;} 50%{left:0px;} 100%{left:-410px;}}
+
+
+   .tutorial{width:600px;position:absolute;left:350px;top:200px;}
+   .tutorial,#todaysTopic{
+  	   width:600px;text-align:center;background: green;
+  	   color:yellow;font-size:25px;	  	   
+	   animation:todaysTopic 2s linear infinite;
+	}   
+	
+   @keyframes todaysTopic{
+	   0%{left:300px;color:yellow;border:2px dashed red;} 
+	   50%{left:350px;color:white;border:2px solid yellow;} 
+	   100%{left:300px;color:orange;border:2px dashed red;}
+   }
+
+	.mess_box {
+		width:300px;height:20px;
+		color:blue;
+		position: relative;top:-25px;left:900px;
+		overflow: hidden;					      
+	}
+	.mess {		
+		color:brown;
+		font-weight:bold;
+		position: absolute;top:0;left:400px;
+		animation: mess 6s linear infinite;		      
+	}
+
+	  @keyframes mess{
+	   from{left:300px;top:0;}
+	  	to{left:-141px;top:0;}	  	
+	  }
+
+     .animationText{
+  	   width:100px;
+  	   height:100px;
+  	   text-align:center;
+  	   background: red;  
+  	   padding:10px;
+	   position:absolute;left:400px;bottom:200px;	   
+	   border-radius: 55px;	   
+	   transform:scale(0);
+	   animation:animationsTxt 7s 5s linear alternate;	   
+	}  
+     .animationstxt{
+     	border-radius:55px;
+     	background: transparent;
+     	color:white;
+     	font-size:20px;
+     }
+	@keyframes animationsTxt{
+	   0%{left:410px;transform:scale(0);} 
+	   50%{left:410px;transform:scale(1.2);} 
+	   100%{left:410px;transform:scale(0);}
+	}
+
+	.courses {
+		width:100%;height:20px;
+		background: #ff00ff;
+		position: relative;
+		left:0px;bottom:-410px;	
+		overflow: hidden;
+		margin:0 auto;	
+						      
+	}
+	.course {				
+		color:white;
+		font-weight:bold;
+		font-size:15px;
+		position: absolute;left:1900px;
+		animation: course 20s linear infinite;	
+		      
+	}
+	@keyframes course{
+
+	   0% {
+	   	    left:1900px;
+	   	  }
+
+	   100% {
+
+	   	    left:-1900px;
+	   	}	
+
+	}
+
+
+	.topic{
+
+		animation: topic 2s linear infinite;
+	}
+
+	@keyframes topic {	
+
+	   0%{color:green;}
+	   50%{color:brown;transform:rotate(1deg);}
+	   100%{color:blue;}
+
+	}
+  
+	.smily01{	
+	    width:50px;	   
+		position: absolute;
+		left:580px;bottom:437px;
+		background: transparent;
+		animation: smily01 5s linear infinite;      
+	}
+
+
+	@keyframes smily01 {	
+	   0%{width:0;transform:scale(0) rotate(0deg);}
+	   25%{width:40px;transform:scale(3) rotate(-10deg);}	
+	   50%{width:40px;transform:scale(3) rotate(0deg);}	   
+	   100%{width:80px;transform:scale(0) rotate(30deg);}
+	}
+
+	.smily02{	
+	    width:0px;	   
+		position: absolute;
+		left:1100px;bottom:40px;
+		background: transparent;
+		animation: smily02 5s 3s linear alternate;  
+	}
+	@keyframes smily02 {	
+	   0%{width:0;transform:scale(0) rotate(0deg);}
+	   25%{width:40px;transform:scale(3) rotate(-10deg);}	
+	   50%{width:40px;transform:scale(3) rotate(0deg);}	   
+	   100%{width:0px;transform:scale(0) rotate(30deg);}
+	}
+
+ /*  Tutorial */
+	.smily_one_wrapper{
+		width:300px;height:100px;
+	
+	}
+ 	.smily_one{	
+	    width:50px;	  	
+		background: transparent;
+		position:absolute;top:-160px;left:480px;
+		animation: smily01 5s linear infinite;  
+	}
+	@keyframes smily_one {	
+	   0%{width:0;transform:scale(0) rotate(0deg);}
+	   25%{width:50px;transform:scale(3) rotate(-10deg);}	
+	   50%{width:50px;transform:scale(3) rotate(0deg);}	   
+	   100%{width:90px;transform:scale(0) rotate(30deg);}
+	}
+ /* Aeroplane */
+	.aeroplane{
+		width:0px;		
+		position: absolute;
+		left:-15px;bottom:36px;
+		background: transparent;
+		animation: airo 10s linear infinite;
+	}
+
+	@keyframes airo {	
+
+	   0%{left:-500px;bottom: 30px;transform: rotate(10deg);width:100px;}
+	   25%{left:300px;bottom:50px;transform: rotate(-10deg);width:100px;}	   
+	   50%{left:1240px;bottom:530px;transform: rotate(-5deg);width:100px;}
+	   75%{left:1240px;bottom:530px;transform: rotate(90deg);width:100px;}
+	   95%{left:880px;bottom: 100px;transform: rotate(180deg);width:100px;}
+	   100%{left:880px;bottom: 100px;transform: rotate(180deg);width:100;height:100;}
+	}
+  .car01{
+	      width:100px;
+	      position: absolute;left:0;right:0;
+	      background: transparent;
+	      animation: car01 10s linear infinite;
+    }
+
+    @keyframes car01 {	
+	   0%{left:1300px;bottom: 30px;transform:}
+	   100%{left:-200px;bottom:50px;}
+    }
+
+
+  .car02{
+	      width:100px;
+	      position: absolute;left:0;right:0;
+	      background: transparent;
+	      animation: car02 20s linear infinite;
+    }
+    @keyframes car02 {	
+	   0%{left:-100px;bottom:65px;}
+	   100%{left:1300px;bottom:65px;}
+	}	
+    
+ 
+
+
+/*  Tutorial_01  */
+
+/* Css for Logo */
+    .tut01_astech {width:70px;
+        padding:8px;
+        margin:10px;
+        border:2px solid #0000ff;
+        border-radius:50%;
+        background:transparent;
+        position:absolute;
+        animation:tut01_astech 10s linear infinite;
+    }
+    .tut01_astech #tut01_logo {
+          width:70px;          
+          animation:tut01_logo 1s linear alternate infinite;        
+    }
+
+  @keyframes tut01_astech{ 
+      0%{transform:rotateY(0deg);}
+      100%{transform:rotateY(360deg);}    
+  }
+  @keyframes tut01_logo{ 
+      0%{transform:rotate(-10deg);}
+      100%{transform:rotate(10deg);}        
+  }  
+/* Css for Logo End */	
+
+	.tut01_smily_one_wrapper{
+		width:300px;
+		height:100px;
+		position:absolute;
+		top:200px;
+		left:120px;
+	}
+
+ 	.tut01_smily_one{	
+	    width:50px;	  
+		background: transparent;
+		position:absolute;top:-160px;left:480px;
+		animation: smily01 5s linear infinite;  
+	}
+	@keyframes smily_one {	
+	   0%{width:0;transform:scale(0) rotate(0deg);}
+	   25%{width:50px;transform:scale(3) rotate(-10deg);}	
+	   50%{width:50px;transform:scale(3) rotate(0deg);}	   
+	   100%{width:90px;transform:scale(0) rotate(30deg);}
+	}
+
+
+.   .tut01_animationText {
+
+	}
+
+    .tut01_animationstxt{
+       font-size:16px;
+       margin-top:5px;
+    }
+
+	.tut01_mess_box {
+		width:300px;height:30px;
+		color:blue;
+		position: relative;top:-25px;left:900px;
+		overflow: hidden;					      
+	}
+	.tut01_mess {	
+	    width:300px;	
+		color:yellow;
+		font-weight:bold;
+		font-size:15px;
+		position: absolute;top:0;left:400px;
+		animation: tut01_mess 6s linear infinite;		      
+	}
+
+	  @keyframes tut01_mess {
+	   from{left:300px;top:0;}
+	  	to{left:-141px;top:0;}	  	
+	  }
+
+	.tut01_aeroplane{
+		width:60%;	
+		position: absolute;
+		left:-130px;bottom:36px;
+		background: transparent;
+		animation: tut01_aeroplane 20s linear infinite;
+	}
+
+	@keyframes tut01_aeroplane {	
+	   0%{left:-270px;bottom:0px;}
+	   50%{left:20px;bottom:100px;}	   
+	   75%{left:1390px;bottom:140px;width:20%;transform: rotate(-15deg);}
+	   100%{left:1390px;bottom:140px;width:20%;transform: rotate(-15deg);}
+	}
+
+
+/* Css for Logo */
+    .tut01_astech{
+    	width:70px;
+        border:2px solid #ff0000;  
+    }
+
+    .tut01_car01 {
+	      width:100px;
+	      position: absolute;
+	      animation: tut_car01 15s linear infinite;
+    }
+    .tut01_car02 {
+	      width:100px;
+	      position: absolute;
+	      animation: tut_car02 20s linear infinite;
+    }
+
+	@keyframes tut_car01 {
+	   0%{left:1300px;bottom:75px;}
+	   100%{left:-1300px;bottom:75px;}	
+	}
+	@keyframes tut_car02 {
+	   0%{left:-1300px;bottom:107px;}
+	   100%{left:1300px;bottom:107px;}	
+	}
+
+	.tut01_courses {
+		width:100%;height:20px;
+		background: #ff00ff;
+		position: absolute;
+		left:0px;bottom:92px;	
+		overflow: hidden;
+		margin:0 auto;	
+						      
+	}
+	.tut01_course {				
+		color:white;
+		font-weight:bold;
+		font-size:15px;
+		position: absolute;left:1900px;
+		animation: tut01_course 28s linear infinite;	
+		      
+	}
+	@keyframes tut01_course{
+
+	   0% {
+	   	    left:1900px;
+	   	  }
+
+	   100% {
+
+	   	    left:-1900px;
+	   	}	
+
+	}
+
+    .tut01_animationText {
+  	   width:100px;
+  	   height:100px;
+  	   text-align:center;
+  	   background: rgb(255,0,0);  
+  	   padding:10px;
+	   position:absolute;left:0px;bottom:0;	   
+	   border-radius: 55px;	   
+	   transform:scale(0);
+	   animation:tut01_animationsTxt 7s linear infinite;	   
+	}  
+    .tut01_animationstxt {
+     	border-radius: 55px;
+     	background: transparent;     	
+     	color:yellow;
+     	font-size:15px;
+     	font-weight: bold;
+     	margin-top:15px;
+     }
+
+	@keyframes tut01_animationsTxt{
+	   0%{left:600px;transform:scale(0);} 
+	   50%{left:600px;transform:scale(1.0);} 
+	   100%{left:600px;transform:scale(0);}
+	}
+
+/*  End of Tutorial_01  */

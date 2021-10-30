@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="site.css">
+	<link rel="stylesheet" type="text/css" href="public/css/tutorial_03.css">
+
+	<title>HTML CSS & JavaScript Tutorial_03</title>	
+</head>
+
+<body>
+	<div class="header">
+	<!-- LOGO -->
+    <div class="tut01_astech" id="tut01_astech">
+    	<img id="tut01_logo" src="public/images/astech.jpg">      
+    </div>
+    <!-- LOGO End -->
+
+
+    This is header...
+      	<div class="tut01_mess_box">
+			<span class="tut01_mess">Tutorial_03: Finding HTML elements by id, tag name, class name, CSS selectors, HTML ojects collections, Hide & Show Elements, Script not working in head tag</span>
+		</div>
+	</div>	
+
+ 
+	<h1 class="main_heading">HTML CSS JavaScript</h1>
+  
+
+     <!-- Content -->
+     <div class="content">
+     <!-- 
+	   -> Finding HTML elements by id
+	   -> Finding HTML elements by tag name
+	   -> Finding HTML elements by class name
+	   -> Finding HTML elements by CSS selectors
+	   -> Finding HTML elements by HTML object collections
+      -->
+
+
+    <!-- Element Find by id -->
+    <div id="byId">1.Element Find By Id</div>
+    
+    <!-- Element Find by Tag Name -->
+    <div>2.Element Find By Tag Name</div>
+
+
+    <!-- Element Find by Class Name -->
+    <div class="byClassName">3.Element Find By Class Name</div>
+
+    <!-- Element Find by  CSS selectors -->
+    <div id="byCssSelector">4.Element Find By CSS selectors</div>
+
+    
+    <!-- Element Find by HTML object collections -->
+    <div id="byId">5.Element Find By HTML object collections</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Form -->
+
+	<form action="#" method="post" id="myForm">
+		<input type="text" value="18">
+		<input type="text" value="29">
+		<input type="text" value="30">
+		<input type="text" value="52">
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	    <!-- Aeroplane -->
+		<div class="tut01_aeroplane">
+		   	<img class="tut01_aeroplane" src="public/images/aeroplane03.png">	
+		</div>
+
+	    <!-- Smily -->
+		<div class="tut01_smily_one_wrapper">
+		   	<img class="tut01_smily_one" src="public/images/smily01.png">	
+		</div>    
+
+    </div>
+    <!-- End of content -->	
+
+
+
+
+	<!-- Bottom Text -->		
+	<div class="tut01_courses">
+		<span class="tut01_course">Web Development & Web Designing: HTML, HTML5, CSS, CSS3, Javascript, jquery, vue js, angular js, react js, express js, node js, typescript, core php, cakephp, codeigniter, laravel, zend, 
+		laminas, mysql, RDMS, mongoDB, sqlite, wordpress, python, django, flash, ruby, ruby on rails etc.</span>
+	</div>
+
+
+
+
+	<div class="footer">This is footer...
+
+	    <!-- Animation Text -->
+		<div class="tut01_animationText">		   	  
+			<div class="tut01_animationstxt">HTML CSS JavaScript Tutorial</div>
+		</div>	
+	</div>
+
+
+
+
+
+     <img class="tut01_car01" src="public/images/car01.png" id="car01" onclick="noAttac()">
+     <img class="tut01_car02" src="public/images/car02.png" id="car02" onclick="noAttac()">
+
+
+
+
+	<script type="text/javascript" src="public/js/tutorial_03.js"></script>
+	
+</body>
+</html>
+
+
+
+
+
+
+<style>
+  .main_heading {
+  	 color:green;
+  	 position:absolute;
+  	 font-size:25px;
+  	 margin:75px 40px;
+  	 animation: heading 3s linear infinite
+  }
+
+  @keyframes heading {
+  	 0%{transform:rotate(0deg) skewY(15deg);width:150px;}
+  	 25%{transform:rotate(-40deg) skewY(18deg);width:150px;color:red;}
+  	 50%{transform:rotate(0deg) skewY(18deg);width:150px;color:red;}
+  	 75%{transform:rotate(40deg)skewX(20deg);width:150px;}
+  	 100%{transform:rotate(0deg) skewY(15deg);width:150px;}
+  }
+
+
+
+
+  
+</style>

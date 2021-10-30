@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="site.css">
+	<link rel="stylesheet" type="text/css" href="public/css/tutorial_02.css">
+	<script type="text/javascript" src="public/js/tutorial_02.js"></script>
+	<title>HTML CSS & JavaScript Tutorial_02</title>	
+</head>
+
+<body>
+	<div class="header">
+	<!-- LOGO -->
+    <div class="tut01_astech" id="tut01_astech">
+    	<img id="tut01_logo" src="public/images/astech.jpg">      
+    </div>
+    <!-- LOGO End -->
+
+
+    This is header...
+      	<div class="tut01_mess_box">
+			<span class="tut01_mess">HTML CSS & JavaScript Tutorial</span>
+		</div>
+	</div>	
+ 
+	<h1 class="main_heading">HTML CSS JavaScript</h1>
+  
+
+     <!-- Content -->
+     <div class="content">
+
+
+    <div id="result">This is result</div>
+
+    <button onclick="change()">Click</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	    <!-- Aeroplane -->
+		<div class="tut01_aeroplane">
+		   	<img class="tut01_aeroplane" src="public/images/aeroplane03.png">	
+		</div>
+
+	    <!-- Smily -->
+		<div class="tut01_smily_one_wrapper">
+		   	<img class="tut01_smily_one" src="public/images/smily01.png">	
+		</div>    
+
+    </div>
+    <!-- End of content -->	
+
+
+
+
+	<!-- Bottom Text -->		
+	<div class="tut01_courses">
+		<span class="tut01_course">Web Development & Web Designing: HTML, HTML5, CSS, CSS3, Javascript, jquery, vue js, angular js, react js, express js, node js, typescript, core php, cakephp, codeigniter, laravel, zend, 
+		laminas, mysql, RDMS, mongoDB, sqlite, wordpress, python, django, flash, ruby, ruby on rails etc.</span>
+	</div>
+
+
+
+
+	<div class="footer">This is footer...
+
+	    <!-- Animation Text -->
+		<div class="tut01_animationText">		   	  
+			<div class="tut01_animationstxt">HTML CSS JavaScript Tutorial</div>
+		</div>	
+	</div>
+
+
+
+
+
+<div class="tut01_notes_box">
+	<div class="tut01_notes">HTML CSS & JavaScript Notes:<br>
+
+
+
+	<div class="notes">
+		The <script> Tag
+			In HTML, JavaScript code is inserted between <script> and </script> tags.
+
+
+			Example:<br>
+
+			<script>
+				document.getElementById("demo").innerHTML = "My First JavaScript";
+			</script> 
+
+	        <br>
+			JavaScript Functions and Events:<br>
+			A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+			For example, a function can be called when an event occurs, like when the user clicks a button.
+            <br><br>
+
+			JavaScript in <head> or <body><br>
+			You can place any number of scripts in an HTML document.<br>
+			Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both.
+			<br>JavaScript in <head><br><br>
+
+			In this example, a JavaScript function is placed in the <head> section of an HTML page.
+			The function is invoked (called) when a button is clicked:<br><br>
+
+
+				<head>
+				<script>
+				function myFunction() {
+				  document.getElementById("demo").innerHTML = "Paragraph changed.";
+				}
+				</script>
+				</head>
+				<body>
+
+	            <br><br>
+				<h2>Demo JavaScript in Head</h2><br><br>
+
+				<p id="demo">A Paragraph</p>
+				<button type="button" onclick="myFunction()">Click Here</button>
+
+				</body>
+
+
+            <br><br>
+			JavaScript in <body><br><br>
+			In this example, a JavaScript function is placed in the <body> section of an HTML page.
+
+			The function is invoked (called) when a button is clicked:
+
+
+			<body>
+
+			<br><h2>Demo JavaScript in Body</h2><br>
+
+			<p id="demo">A Paragraph</p>
+
+			<button type="button" onclick="myFunction()">Click Here</button>
+
+			<script>
+			function myFunction() {
+			  document.getElementById("demo").innerHTML = "Paragraph changed.";
+			}
+			</script>
+
+			</body>
+
+
+			External JavaScript:
+
+			Scripts can also be placed in external files:
+			External file: myScript.js
+			function myFunction() {
+			  document.getElementById("demo").innerHTML = "Paragraph changed.";
+			}<br>
+
+
+			Example:<br>
+			&lt;script src="myScript.js"&gt; &lt;/script&gt;
+
+	</div>
+
+	</div>
+
+</div>
+<!-- End Of Notes Box -->
+
+	
+
+
+
+
+     <img class="tut01_car01" src="public/images/car01.png" id="car01" onclick="noAttac()">
+     <img class="tut01_car02" src="public/images/car02.png" id="car02" onclick="noAttac()">
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<style>
+
+  .main_heading {
+  	 color:green;
+  	 position:absolute;
+  	 font-size:25px;
+  	 margin:75px 40px;
+  	 animation: heading 3s linear infinite
+  }
+
+  @keyframes heading {
+  	 0%{transform:rotate(0deg) skewY(15deg);width:150px;}
+  	 25%{transform:rotate(-40deg) skewY(18deg);width:150px;color:red;}
+  	 50%{transform:rotate(0deg) skewY(18deg);width:150px;color:red;}
+  	 75%{transform:rotate(40deg)skewX(20deg);width:150px;}
+  	 100%{transform:rotate(0deg) skewY(15deg);width:150px;}
+  }
+
+	.tut01_notes_box {
+		width:400px;height:300px;		
+		position: absolute;top:200px;left:900px;
+		overflow: hidden;	
+		background: transparent;				      
+	}
+	.tut01_notes {	
+	    width:400px;	
+		
+		font-weight:bold;
+		font-size:15px;
+		position: absolute;bottom:-500px;
+		animation: tut01_notes 200s linear infinite;		      
+	}
+
+	  @keyframes tut01_notes {
+	    0%{bottom:-500px;}	 
+	  	100%{bottom:500px;}	  	
+	  }
+
+
+  
+</style>

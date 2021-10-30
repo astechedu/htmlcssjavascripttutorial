@@ -1,0 +1,10 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+.header{width:100%;color:white;background:blue;font-size:40px;}
+.footer{width:100%;color:white;background:blue;font-size:80px;position:fixed;left:0;bottom:0;}
+.content{width:80%;margin:0 auto;}
+body{overflow:hidden;}
+
+
+.notes {
+	display:block;
+}

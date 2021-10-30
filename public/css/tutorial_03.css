@@ -1,0 +1,64 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+.header{width:100%;color:white;background:blue;font-size:40px;}
+.footer{width:100%;color:white;background:blue;font-size:80px;position:fixed;left:0;bottom:0;}
+.content{width:80%;margin:0 auto;}
+body{overflow:hidden;}
+
+
+div {
+	font-size:35px;
+	color:rgb(225,0,295);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tut01_mess {	
+	width:1090px;	
+
+	animation: tut01_mess 10s linear infinite;		      
+}
+
+@keyframes tut01_mess {
+	from{left:350px;top:0;}
+	to{left:-1050px;top:0;}	  	
+}
